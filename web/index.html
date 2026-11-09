@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+-->
+<html>
+    <head>
+        <title>Personal Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <div class="hero">
+            <h1>Create Your Personal Profile</h1>
+            <p class="hero-text">Fill in the form below.</p>
+        </div>
+
+        <div class="container">
+            <form action="ProfileServlet" method="post" class="card">
+                <h2 class="card-title">Profile Information</h2>
+                <p class="card-text">All fields are required.</p>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="For example: Nur Aisyah binti Ahmad" required>
+
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId" placeholder="For example: 2024123456" required>
+
+                <label for="programme">Programme</label>
+                                <input type="text" id="programme" name="programme" placeholder="For example: CDCS240 - Bachelor of Information Technology (Hons.)" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="For example: aisyah@student.uitm.edu.my" required>
+
+                <label for="hobbies">Hobbies</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="For example: Hiking, Photography" required>
+                <p class="hint">Separate each hobby with a comma.</p>
+
+                <label for="intro">Short Self-Introduction</label>
+                <textarea id="intro" name="intro" rows="5" placeholder="Tell us a little about yourself..." required></textarea>
+
+                <div class="submit-row">
+                    <input type="submit" value="Submit Profile" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
